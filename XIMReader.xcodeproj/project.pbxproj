@@ -9,11 +9,6 @@
 /* Begin PBXBuildFile section */
 		0332F3EE233C9F0800811111 /* XMLparse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0332F3ED233C9F0800811111 /* XMLparse.swift */; };
 		0332F3F0233CBED800811111 /* FMDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0332F3EF233CBED800811111 /* FMDBManager.swift */; };
-		03BF5A3C234C25E700EFB691 /* DataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BF5A3B234C25E700EFB691 /* DataBaseManager.swift */; };
-		03BF5A3F234C2FB500EFB691 /* StockCodeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BF5A3E234C2FB500EFB691 /* StockCodeTable.swift */; };
-		03BF5A41234C30D400EFB691 /* StockDataCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BF5A40234C30D400EFB691 /* StockDataCenter.swift */; };
-		03BF5A43234C326400EFB691 /* OtherCodeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BF5A42234C326400EFB691 /* OtherCodeTable.swift */; };
-		03BF5A45234C779500EFB691 /* DataCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BF5A44234C779500EFB691 /* DataCenter.swift */; };
 		03C73914233B33BC00E936C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C73913233B33BC00E936C5 /* AppDelegate.swift */; };
 		03C73916233B33BC00E936C5 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C73915233B33BC00E936C5 /* FirstViewController.swift */; };
 		03C73918233B33BC00E936C5 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C73917233B33BC00E936C5 /* SecondViewController.swift */; };
@@ -53,11 +48,6 @@
 		02C0F7369A7EE8902AD34395 /* Pods_XIMReaderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XIMReaderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0332F3ED233C9F0800811111 /* XMLparse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLparse.swift; sourceTree = "<group>"; };
 		0332F3EF233CBED800811111 /* FMDBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMDBManager.swift; sourceTree = "<group>"; };
-		03BF5A3B234C25E700EFB691 /* DataBaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseManager.swift; sourceTree = "<group>"; };
-		03BF5A3E234C2FB500EFB691 /* StockCodeTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockCodeTable.swift; sourceTree = "<group>"; };
-		03BF5A40234C30D400EFB691 /* StockDataCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDataCenter.swift; sourceTree = "<group>"; };
-		03BF5A42234C326400EFB691 /* OtherCodeTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherCodeTable.swift; sourceTree = "<group>"; };
-		03BF5A44234C779500EFB691 /* DataCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCenter.swift; sourceTree = "<group>"; };
 		03C73910233B33BC00E936C5 /* XIMReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XIMReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03C73913233B33BC00E936C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03C73915233B33BC00E936C5 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -115,25 +105,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		03BF5A3A234C25C600EFB691 /* Db */ = {
-			isa = PBXGroup;
-			children = (
-				03BF5A3B234C25E700EFB691 /* DataBaseManager.swift */,
-			);
-			path = Db;
-			sourceTree = "<group>";
-		};
-		03BF5A3D234C2FA000EFB691 /* example */ = {
-			isa = PBXGroup;
-			children = (
-				03BF5A3E234C2FB500EFB691 /* StockCodeTable.swift */,
-				03BF5A42234C326400EFB691 /* OtherCodeTable.swift */,
-				03BF5A44234C779500EFB691 /* DataCenter.swift */,
-				03BF5A40234C30D400EFB691 /* StockDataCenter.swift */,
-			);
-			path = example;
-			sourceTree = "<group>";
-		};
 		03C73907233B33BC00E936C5 = {
 			isa = PBXGroup;
 			children = (
@@ -162,8 +133,6 @@
 				03C73913233B33BC00E936C5 /* AppDelegate.swift */,
 				03C73915233B33BC00E936C5 /* FirstViewController.swift */,
 				03C73917233B33BC00E936C5 /* SecondViewController.swift */,
-				03BF5A3D234C2FA000EFB691 /* example */,
-				03BF5A3A234C25C600EFB691 /* Db */,
 				03C7394A233B50F700E936C5 /* Pages */,
 				03C73949233B50BB00E936C5 /* Component */,
 				03C73946233B36A000E936C5 /* Base */,
@@ -474,17 +443,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03BF5A43234C326400EFB691 /* OtherCodeTable.swift in Sources */,
-				03BF5A3C234C25E700EFB691 /* DataBaseManager.swift in Sources */,
 				03C73918233B33BC00E936C5 /* SecondViewController.swift in Sources */,
 				03C73914233B33BC00E936C5 /* AppDelegate.swift in Sources */,
-				03BF5A41234C30D400EFB691 /* StockDataCenter.swift in Sources */,
-				03BF5A3F234C2FB500EFB691 /* StockCodeTable.swift in Sources */,
 				03C73916233B33BC00E936C5 /* FirstViewController.swift in Sources */,
 				03C7394E233B517D00E936C5 /* XIMReadMenuViewController.swift in Sources */,
 				03C73948233B36AC00E936C5 /* Common.swift in Sources */,
 				0332F3EE233C9F0800811111 /* XMLparse.swift in Sources */,
-				03BF5A45234C779500EFB691 /* DataCenter.swift in Sources */,
 				03C7394C233B512800E936C5 /* XIMReadDetailViewController.swift in Sources */,
 				0332F3F0233CBED800811111 /* FMDBManager.swift in Sources */,
 				03C73945233B343000E936C5 /* XIMTestDataSource.swift in Sources */,
