@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0332F3EE233C9F0800811111 /* XMLparse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0332F3ED233C9F0800811111 /* XMLparse.swift */; };
 		0332F3F0233CBED800811111 /* FMDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0332F3EF233CBED800811111 /* FMDBManager.swift */; };
+		036834CD23517555002DA1E0 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036834CC23517555002DA1E0 /* ThirdViewController.swift */; };
 		03C73914233B33BC00E936C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C73913233B33BC00E936C5 /* AppDelegate.swift */; };
 		03C73916233B33BC00E936C5 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C73915233B33BC00E936C5 /* FirstViewController.swift */; };
 		03C73918233B33BC00E936C5 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C73917233B33BC00E936C5 /* SecondViewController.swift */; };
@@ -48,6 +49,7 @@
 		02C0F7369A7EE8902AD34395 /* Pods_XIMReaderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XIMReaderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0332F3ED233C9F0800811111 /* XMLparse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLparse.swift; sourceTree = "<group>"; };
 		0332F3EF233CBED800811111 /* FMDBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMDBManager.swift; sourceTree = "<group>"; };
+		036834CC23517555002DA1E0 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		03C73910233B33BC00E936C5 /* XIMReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XIMReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03C73913233B33BC00E936C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03C73915233B33BC00E936C5 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				03C73913233B33BC00E936C5 /* AppDelegate.swift */,
 				03C73915233B33BC00E936C5 /* FirstViewController.swift */,
 				03C73917233B33BC00E936C5 /* SecondViewController.swift */,
+				036834CC23517555002DA1E0 /* ThirdViewController.swift */,
 				03C7394A233B50F700E936C5 /* Pages */,
 				03C73949233B50BB00E936C5 /* Component */,
 				03C73946233B36A000E936C5 /* Base */,
@@ -445,6 +448,7 @@
 			files = (
 				03C73918233B33BC00E936C5 /* SecondViewController.swift in Sources */,
 				03C73914233B33BC00E936C5 /* AppDelegate.swift in Sources */,
+				036834CD23517555002DA1E0 /* ThirdViewController.swift in Sources */,
 				03C73916233B33BC00E936C5 /* FirstViewController.swift in Sources */,
 				03C7394E233B517D00E936C5 /* XIMReadMenuViewController.swift in Sources */,
 				03C73948233B36AC00E936C5 /* Common.swift in Sources */,
