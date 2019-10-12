@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import Fuzi
 
 let itemIdentifity = "book_identifity"
 
@@ -16,9 +18,54 @@ class FirstViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.creatCollectViewContrlloer()
-        self.updateNavigation()
+//        DBAction(FMDBManager)
+        FMDBManager.shared.DBAction()
+//        downloadMap()
+//        self.XMLParse()
+//        self.creatCollectViewContrlloer()
+//        self.updateNavigation()
         // Do any additional setup after loading the view.
+    }
+    
+    func XMLParse(){
+        let path = Bundle.main.path(forResource: "nutrition", ofType: "xml")
+        let url = URL(fileURLWithPath: path!)
+        
+//        let xml = try! String(contentsOf: url)
+        do {
+            let data = try! Data(contentsOf: url)
+            let document = try! XMLDocument(data: data)
+            
+            if let root = document.root {
+                print(root.tag!)
+                
+                // define a prefix for a namespace
+                document.definePrefix("atom", defaultNamespace: "http://www.w3.org/2005/Atom")
+
+                // get first child element with given tag in namespace(optional)
+//                print(root.firstChild(tag: "title", inNamespace: "atom") as Any)
+                var xpath = "//food/name"
+                for element in document.xpath(xpath) {
+                    print("\(element)")
+                }
+                
+                // iterate through all children
+                for element in root.children {
+                    print("\(String(describing: index)) \(String(describing: element.tag)): \(element.attributes)")
+                }
+            }
+            
+            
+            
+        } catch let error as XMLError {
+            switch error {
+            case .noError: print("no error")
+            case .parserFailure, .invalidData: print("error")
+            case .libXMLError(let code, let msg): print("libxml error with:\(code) \(msg)")
+            case .xpathError(let code):
+                print("\(code)")
+            }
+        }
     }
 
 }
@@ -97,6 +144,27 @@ extension FirstViewController {
     
     @objc func searchAction() {
         print("search")
+//        Alamofire.request("https://www.jianshu.com/p/f8c3adb056cf").response { (DefaultDataResponse) in
+//            print("\(DefaultDataResponse)")
+//        }
+        let request = Alamofire.request("https://httpbin.org/get").responseJSON { (DataResponse) in
+//            print(DataResponse.result)
+//            print("\r\n-------------------\r\n")
+//            print(DataResponse.response)
+//            print("\r\n-------------------\r\n")
+//            print(DataResponse.data)
+//            print("\r\n-------------------\r\n")
+//            print(DataResponse.result)
+//            print("\r\n-------------------\r\n")
+//
+//            if let JSON = DataResponse.result.value {
+//                print("JSON:\(JSON)")
+//            }
+        }
+        
+//        print(request)
+//        debugPrint(request)
+        
     }
     
 }

@@ -3,10 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0332F3EE233C9F0800811111 /* XMLparse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0332F3ED233C9F0800811111 /* XMLparse.swift */; };
+		0332F3F0233CBED800811111 /* FMDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0332F3EF233CBED800811111 /* FMDBManager.swift */; };
+		03BF5A3C234C25E700EFB691 /* DataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BF5A3B234C25E700EFB691 /* DataBaseManager.swift */; };
+		03BF5A3F234C2FB500EFB691 /* StockCodeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BF5A3E234C2FB500EFB691 /* StockCodeTable.swift */; };
+		03BF5A41234C30D400EFB691 /* StockDataCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BF5A40234C30D400EFB691 /* StockDataCenter.swift */; };
+		03BF5A43234C326400EFB691 /* OtherCodeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BF5A42234C326400EFB691 /* OtherCodeTable.swift */; };
+		03BF5A45234C779500EFB691 /* DataCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BF5A44234C779500EFB691 /* DataCenter.swift */; };
 		03C73914233B33BC00E936C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C73913233B33BC00E936C5 /* AppDelegate.swift */; };
 		03C73916233B33BC00E936C5 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C73915233B33BC00E936C5 /* FirstViewController.swift */; };
 		03C73918233B33BC00E936C5 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C73917233B33BC00E936C5 /* SecondViewController.swift */; };
@@ -19,6 +26,7 @@
 		03C73948233B36AC00E936C5 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C73947233B36AC00E936C5 /* Common.swift */; };
 		03C7394C233B512800E936C5 /* XIMReadDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C7394B233B512800E936C5 /* XIMReadDetailViewController.swift */; };
 		03C7394E233B517D00E936C5 /* XIMReadMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C7394D233B517D00E936C5 /* XIMReadMenuViewController.swift */; };
+		03C73950233C5BDD00E936C5 /* nutrition.xml in Resources */ = {isa = PBXBuildFile; fileRef = 03C7394F233C5BDD00E936C5 /* nutrition.xml */; };
 		80A7AA89853DBB06485CC477 /* Pods_XIMReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72F8CE9D393EF3FD57F60586 /* Pods_XIMReader.framework */; };
 		8E0A3F92B2A02038D84E109D /* Pods_XIMReaderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 723309A249F0B00FF8656FF7 /* Pods_XIMReaderTests.framework */; };
 		AE1D7C5F00BC75A0011723A7 /* Pods_XIMReaderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02C0F7369A7EE8902AD34395 /* Pods_XIMReaderUITests.framework */; };
@@ -43,6 +51,13 @@
 
 /* Begin PBXFileReference section */
 		02C0F7369A7EE8902AD34395 /* Pods_XIMReaderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XIMReaderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0332F3ED233C9F0800811111 /* XMLparse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLparse.swift; sourceTree = "<group>"; };
+		0332F3EF233CBED800811111 /* FMDBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMDBManager.swift; sourceTree = "<group>"; };
+		03BF5A3B234C25E700EFB691 /* DataBaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseManager.swift; sourceTree = "<group>"; };
+		03BF5A3E234C2FB500EFB691 /* StockCodeTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockCodeTable.swift; sourceTree = "<group>"; };
+		03BF5A40234C30D400EFB691 /* StockDataCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDataCenter.swift; sourceTree = "<group>"; };
+		03BF5A42234C326400EFB691 /* OtherCodeTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherCodeTable.swift; sourceTree = "<group>"; };
+		03BF5A44234C779500EFB691 /* DataCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCenter.swift; sourceTree = "<group>"; };
 		03C73910233B33BC00E936C5 /* XIMReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XIMReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03C73913233B33BC00E936C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03C73915233B33BC00E936C5 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +76,7 @@
 		03C73947233B36AC00E936C5 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		03C7394B233B512800E936C5 /* XIMReadDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XIMReadDetailViewController.swift; sourceTree = "<group>"; };
 		03C7394D233B517D00E936C5 /* XIMReadMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XIMReadMenuViewController.swift; sourceTree = "<group>"; };
+		03C7394F233C5BDD00E936C5 /* nutrition.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = nutrition.xml; sourceTree = "<group>"; };
 		2153A3CE0DA2CF419A4E6F63 /* Pods-XIMReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XIMReader.debug.xcconfig"; path = "Target Support Files/Pods-XIMReader/Pods-XIMReader.debug.xcconfig"; sourceTree = "<group>"; };
 		31CE3CA6F5A664068AFE8E8C /* Pods-XIMReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XIMReader.release.xcconfig"; path = "Target Support Files/Pods-XIMReader/Pods-XIMReader.release.xcconfig"; sourceTree = "<group>"; };
 		6373F1D9732FA1D49A05A0F0 /* Pods-XIMReaderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XIMReaderTests.release.xcconfig"; path = "Target Support Files/Pods-XIMReaderTests/Pods-XIMReaderTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -99,6 +115,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03BF5A3A234C25C600EFB691 /* Db */ = {
+			isa = PBXGroup;
+			children = (
+				03BF5A3B234C25E700EFB691 /* DataBaseManager.swift */,
+			);
+			path = Db;
+			sourceTree = "<group>";
+		};
+		03BF5A3D234C2FA000EFB691 /* example */ = {
+			isa = PBXGroup;
+			children = (
+				03BF5A3E234C2FB500EFB691 /* StockCodeTable.swift */,
+				03BF5A42234C326400EFB691 /* OtherCodeTable.swift */,
+				03BF5A44234C779500EFB691 /* DataCenter.swift */,
+				03BF5A40234C30D400EFB691 /* StockDataCenter.swift */,
+			);
+			path = example;
+			sourceTree = "<group>";
+		};
 		03C73907233B33BC00E936C5 = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +162,8 @@
 				03C73913233B33BC00E936C5 /* AppDelegate.swift */,
 				03C73915233B33BC00E936C5 /* FirstViewController.swift */,
 				03C73917233B33BC00E936C5 /* SecondViewController.swift */,
+				03BF5A3D234C2FA000EFB691 /* example */,
+				03BF5A3A234C25C600EFB691 /* Db */,
 				03C7394A233B50F700E936C5 /* Pages */,
 				03C73949233B50BB00E936C5 /* Component */,
 				03C73946233B36A000E936C5 /* Base */,
@@ -168,7 +205,10 @@
 		03C73946233B36A000E936C5 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				03C7394F233C5BDD00E936C5 /* nutrition.xml */,
 				03C73947233B36AC00E936C5 /* Common.swift */,
+				0332F3ED233C9F0800811111 /* XMLparse.swift */,
+				0332F3EF233CBED800811111 /* FMDBManager.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -223,6 +263,7 @@
 				03C7390C233B33BC00E936C5 /* Sources */,
 				03C7390D233B33BC00E936C5 /* Frameworks */,
 				03C7390E233B33BC00E936C5 /* Resources */,
+				DC57E7701E9E92EAA64F8C49 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -319,6 +360,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03C73950233C5BDD00E936C5 /* nutrition.xml in Resources */,
 				03C73920233B33BD00E936C5 /* LaunchScreen.storyboard in Resources */,
 				03C7391D233B33BD00E936C5 /* Assets.xcassets in Resources */,
 				03C7391B233B33BC00E936C5 /* Main.storyboard in Resources */,
@@ -408,6 +450,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		DC57E7701E9E92EAA64F8C49 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XIMReader/Pods-XIMReader-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XIMReader/Pods-XIMReader-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XIMReader/Pods-XIMReader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -415,12 +474,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03BF5A43234C326400EFB691 /* OtherCodeTable.swift in Sources */,
+				03BF5A3C234C25E700EFB691 /* DataBaseManager.swift in Sources */,
 				03C73918233B33BC00E936C5 /* SecondViewController.swift in Sources */,
 				03C73914233B33BC00E936C5 /* AppDelegate.swift in Sources */,
+				03BF5A41234C30D400EFB691 /* StockDataCenter.swift in Sources */,
+				03BF5A3F234C2FB500EFB691 /* StockCodeTable.swift in Sources */,
 				03C73916233B33BC00E936C5 /* FirstViewController.swift in Sources */,
 				03C7394E233B517D00E936C5 /* XIMReadMenuViewController.swift in Sources */,
 				03C73948233B36AC00E936C5 /* Common.swift in Sources */,
+				0332F3EE233C9F0800811111 /* XMLparse.swift in Sources */,
+				03BF5A45234C779500EFB691 /* DataCenter.swift in Sources */,
 				03C7394C233B512800E936C5 /* XIMReadDetailViewController.swift in Sources */,
+				0332F3F0233CBED800811111 /* FMDBManager.swift in Sources */,
 				03C73945233B343000E936C5 /* XIMTestDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -605,8 +671,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = test.xiaofengmin.XIMReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_COMPILATION_MODE[arch=*]" = "-D DEBUG";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

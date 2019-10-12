@@ -86,3 +86,24 @@ public let kWidth = UIScreen.main.bounds.size.width
 public let kHeight =  UIScreen.main.bounds.size.height
 
 public let bgColor = UIColor(red: 0.95, green: 0.95, blue: 0.95, alpha: 1)
+
+
+
+
+
+
+
+
+
+func XLog<T>(_ message:T,file:String = #file,funcName:String = #function,lineNum:Int = #line){
+    
+    #if DEBUG
+    
+    let file = (file as NSString).lastPathComponent;
+    
+    print("\(file):(\(lineNum))--\(message)");
+    
+    #endif
+    
+    
+}
