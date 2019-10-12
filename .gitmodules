@@ -1,0 +1,3 @@
+[submodule "XIMDatabase"]
+	path = XIMDatabase
+	url = git@code.aliyun.com:szfy_ios/XIMDatabase.git
