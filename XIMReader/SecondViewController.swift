@@ -7,12 +7,23 @@
 //
 
 import UIKit
+import ShiZhiFengYunForum
 
 class SecondViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        let _ = XIMStdC.init()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+//        let c = Bundle.allFrameworks
+//        let t = Bundle.allBundles
+//        let s = Bundle.main.loadNibNamed("ShiZhiFengYunForum.framework/PageControlView.nib", owner: nil, options: nil);
+//        print("ssss\(String(describing: s))")
+//        let vc = MyViewController.init()
+        let vc = RSFriendsViewController.init()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 
 }

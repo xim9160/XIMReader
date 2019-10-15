@@ -10,4 +10,7 @@
    <FileRef
       location = "group:XIMDatabase/Example/XIMDatabase.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:SubmoduleDemo/SubmoduleDemo.xcodeproj">
+   </FileRef>
 </Workspace>

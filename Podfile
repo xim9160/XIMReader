@@ -28,6 +28,33 @@ target 'XIMReader' do
   # route
   pod 'URLNavigator'
 
+  
+  # szfy
+  pod 'AFNetworking'
+  pod 'SDWebImage', '~> 4.0'
+  pod 'SDWebImage/GIF'
+  pod 'FLAnimatedImage'
+  pod 'SVProgressHUD'
+  pod 'MBProgressHUD'
+
+  # MOB主模块(必须)
+  pod 'mob_smssdk'
+  pod 'mobAPI'
+  pod "AGEmojiKeyboard"
+  pod 'JSONModel'
+  pod 'YYModel'
+  pod 'MJExtension'
+  pod 'ReactiveObjC', '~> 2.1.0'
+  pod 'Masonry'
+  pod 'IQKeyboardManager'
+  pod 'TYAttributedLabel', '~> 2.6.2'
+  pod 'YYText'
+  pod 'TTTAttributedLabel'
+  pod 'YYModel'
+  pod 'XXNibBridge', '~> 2.3.0'
+  pod 'YBPopupMenu', '~> 1.1.2'
+  
+  
   target 'XIMReaderTests' do
     inherit! :search_paths
     # Pods for testing

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1100"
+   LastUpgradeVersion = "1110"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C357B681B58B6ECDE4CB2ADD650CF106"
-               BuildableName = "Pods_XIMReader.framework"
-               BlueprintName = "Pods-XIMReader"
-               ReferencedContainer = "container:Pods.xcodeproj">
+               BlueprintIdentifier = "036834E323517AC5002DA1E0"
+               BuildableName = "SubmoduleDemo.framework"
+               BlueprintName = "SubmoduleDemo"
+               ReferencedContainer = "container:SubmoduleDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,10 +28,20 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "036834EC23517AC5002DA1E0"
+               BuildableName = "SubmoduleDemoTests.xctest"
+               BlueprintName = "SubmoduleDemoTests"
+               ReferencedContainer = "container:SubmoduleDemo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "Release"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -47,6 +57,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "036834E323517AC5002DA1E0"
+            BuildableName = "SubmoduleDemo.framework"
+            BlueprintName = "SubmoduleDemo"
+            ReferencedContainer = "container:SubmoduleDemo.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

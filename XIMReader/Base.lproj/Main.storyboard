@@ -82,10 +82,10 @@
             </objects>
             <point key="canvasLocation" x="1659.4202898550725" y="359.59821428571428"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tabbar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                <tabBarController id="49e-Tb-3d3" customClass="TabbarController" customModule="XIMReader" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
