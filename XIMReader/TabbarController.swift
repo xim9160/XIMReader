@@ -19,6 +19,7 @@ class TabbarController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tryLoadImg()
         setupChildControllers()
         tabBar.isTranslucent = false
     }
@@ -83,7 +84,7 @@ extension TabbarController {
             return UIViewController()
         }
         
-        let path = Bundle.main.path(forResource: "Frameworks/ShiZhiFengYunForum.framework/ShiZhiFengYunBundle", ofType: "bundle")
+        let path = Bundle.main.path(forResource: "Frameworks/ch.framework/ShiZhiFengYunBundle", ofType: "bundle")
         let bundle = Bundle(path: path ?? "")
         
 //        let bundle2 = Bundle(for: cls)
@@ -93,11 +94,11 @@ extension TabbarController {
         //2.创建视图控制器
         let vc = cls.init()
         
-        vc.title = title
+//        vc.  = title
         //3.设置图像
         vc.tabBarItem.image = UIImage(named:imageName + "_normal")?.withRenderingMode(.alwaysOriginal)
         vc.tabBarItem.selectedImage = UIImage(named: imageName + "_highlight")?.withRenderingMode(.alwaysOriginal)
-        //4.设置tabBar的标题字体(大小)
+        //4.设置tabBar的标题字体(ch大小)
         vc.tabBarItem.setTitleTextAttributes([.foregroundColor : UIColor.white], for: .normal)
         vc.tabBarItem.setTitleTextAttributes([.foregroundColor : UIColor.gray], for: .highlighted)
         //系统默认是12号字，修改字体大小，要设置Normal的字体大小
@@ -120,5 +121,40 @@ extension TabbarController {
         UIGraphicsEndImageContext()
         
         return image
+    }
+}
+
+extension TabbarController {
+    func tryLoadImg() -> Void {
+//        NSString *bundleName = @"ShiZhiFengYunBundle"\
+//        NSURL* associateBundleURL = [[NSBundle mainBundle] URLForResource:@"Frameworks" withExtension:nil];\
+//        associateBundleURL = [associateBundleURL URLByAppendingPathComponent:bundleName];\
+//        associateBundleURL = [associateBundleURL URLByAppendingPathExtension:@"framework"];\
+//        NSBundle *associateBunle = [NSBundle bundleWithURL:associateBundleURL];\
+//        associateBundleURL = [associateBunle URLForResource:bundleName withExtension:@"bundle"];\
+//        NSBundle *bundle = [NSBundle bundleWithURL:associateBundleURL];\
+//        return bundle;
+        //RSDayNewsCell
+//        let bundleNmae = "ShiZhiFengYunBundle"
+//        var url = Bundle.main.url(forResource: "Frameworks", withExtension: nil)
+//        url?.appendPathComponent(bundleNmae)
+//        url?.appendPathComponent("framework")
+//        let bundle = Bundle(url: url!)
+//        url = bundle?.url(forResource: bundleNmae, withExtension: "bundle")
+//        let fBundle = Bundle(url: url!)
+//
+//        print("\(fBundle)")
+//        NSBundle *cbundle = [NSBundle bundleForClass:[self class]];
+//        NSString *path = [bundle pathForResource:bundleName ofType:@"bundle"];
+//        NSBundle *bundle = [NSBundle bundleWithPath:path];
+        XIMStdC.loadBundle()
+        let mBD = Bundle.main
+        let cls = NSClassFromString("HomeUserVC")!
+        let cbundle = Bundle(for: cls)
+        guard let path = cbundle.path(forResource: "ShiZhiFengYunBundle", ofType: "bundle") else {
+            print("fail")
+            return }
+        let bundle = Bundle(path: path)
+        print("bundle")
     }
 }

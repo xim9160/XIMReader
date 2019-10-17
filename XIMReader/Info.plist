@@ -24,6 +24,14 @@
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>SourceHanSansCN-Normal.otf</string>
+		<string>SourceHanSansCN-Regular.otf</string>
+		<string>Kaiti.ttf</string>
+		<string>SimHei.ttf</string>
+		<string>SimSun.ttf</string>
+	</array>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
